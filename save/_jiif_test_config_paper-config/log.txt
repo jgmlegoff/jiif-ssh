@@ -1,0 +1,23 @@
+train dataset: size=7320
+  inp_ssh_lr: shape=(1, 16, 16)
+  inp_sst_hr: shape=(1, 432, 432)
+  coord: shape=(2304, 2)
+  cell: shape=(2304, 2)
+  gt: shape=(2304, 1)
+val dataset: size=2440
+  inp_ssh_lr: shape=(1, 16, 16)
+  inp_sst_hr: shape=(1, 432, 432)
+  coord: shape=(2304, 2)
+  cell: shape=(2304, 2)
+  gt: shape=(2304, 1)
+ dataset: size=7320
+  inp_ssh_lr: shape=(1, 16, 16)
+  inp_sst_hr: shape=(1, 432, 432)
+  coord: shape=(2304, 2)
+  cell: shape=(2304, 2)
+  gt: shape=(2304, 1)
+model: #params=10.8M
+epoch 1/100, train: loss=0.1519, 25.1m 25.1m/41.8h
+epoch 2/100, train: loss=0.0685, val: rmse=0.1582, 27.4m 52.5m/43.8h
+epoch 3/100, train: loss=0.0438, 24.4m 1.3h/42.8h
+epoch 4/100, train: loss=0.0328, val: rmse=0.1525, 27.2m 1.7h/43.4h
